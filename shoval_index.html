@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="he">
+  <head>
+    <meta charset="utf-8">
+    <title>שובל פינטוק - משרד עורכי דין</title>
+    <meta name="description" content="דיני עבודה, תובענות ייצוגיות, חדלות פירעון והוצאה לפועל, מכרזים, חוזים">
+    <meta name="author" content="שובל פינטוק עורכת דין">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/css/uikit.min.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      .uk-navbar-item{
+        padding: 0 25px;
+      }
+      body *{
+        font-family: 'Open Sans', sans-serif!important;
+      }
+      body{
+        overflow-x: hidden;
+      }
+
+      #whatsapp_english{
+        position: fixed;
+        left: auto;
+        top: auto;
+        right: 10px;
+        bottom: 10px;
+        z-index: 2000;
+        width: 70px;
+      }
+
+
+      #logo{
+        transition: 0.2s;
+      }
+
+      @media screen and (max-width: 980px) {
+        #logo{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          width: max-content;
+          box-sizing: border-box;
+        }
+      }
+      body{
+        direction: rtl;
+      }
+    </style>
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  </head>
+  <body>
+
+
+
+    <!-- codepen editor mode - you could open the HTML tab in full width + only one extra line of CSS (not from uikit core) on this example 
+    **since rc.20(October 24, 2018)Offcanvas no longer requires a wrapping content div
+    -->
+
+    <!-- Sticky navbar -->
+    <div class="uk-position-top" id="top">
+      <nav class="uk-navbar-container uk-navbar-transparent uk-light" data-uk-navbar="dropbar: false;"
+           data-uk-sticky="animation: uk-animation-slide-top; 
+                           sel-target: .uk-navbar-container; 
+                           cls-active: uk-navbar-sticky; 
+                           cls-inactive: uk-navbar-transparent uk-light; top: 0">
+        <!-- right -->
+
+
+        <div class="uk-navbar-right">
+          <!--off-canvas trigger hamburger btn. show only on mobile -->
+          <a class="uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small"></span>
+          </a>
+          <a id="logo" class="uk-navbar-item uk-logo" href="#main" uk-scroll>
+            <div id="logo">
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 26.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg style="width: 100%; max-width: 200px; height: auto;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 179.2 41.3" style="enable-background:new 0 0 179.2 41.3;" xml:space="preserve">
+                <style type="text/css">
+                  .st0{fill:none;stroke:#AAAFB2;}
+                  .st1{fill:white;}
+                  .st2{fill:#AAAFB2;}
+                </style>
+                <g>
+                  <line class="st0" x1="99.3" y1="30.6" x2="179.2" y2="30.6"/>
+                  <path class="st1" d="M111.8,14.6h-3.7c0.2-0.4,0.5-0.9,0.7-1.3l0.7-1.1l0,0.9h2.5l0.7-0.9l0,0.9h1.2l-0.5,1.5h-0.7v6.2l-0.9,1.3
+                                       L111.8,14.6z M107.1,15.7c0,0.7-0.5,1.8-1.4,3.3l-0.7,0.3c0.1-0.4,0.3-0.8,0.6-1.2c0.4-0.8,0.6-1.5,0.7-1.9c0-0.2-0.1-0.5-0.2-0.7
+                                       c-0.1-0.2-0.8-0.8-2-1.6l0.9-1.4c1,1,1.7,1.7,1.9,2C107,14.9,107.1,15.3,107.1,15.7 M100.8,12.5l1.3,1.3c0.4,0.4,0.7,0.7,0.8,0.9
+                                       c0.1,0.2,0.1,0.5,0.1,0.8V24l-1,1.2l0-8.8c0-0.5-0.2-0.9-0.5-1.1L99.9,14L100.8,12.5z"/>
+                  <path class="st1" d="M141,12.3c0.7,1.9,1.1,3.4,1.4,4.5c0.3,1.2,0.5,2.1,0.7,2.7l0.6-0.5c0.5-0.5,0.7-1.1,0.7-1.7
+                                       c0-1-0.2-2.1-0.6-3.5l1.2-1.4c0.2,1,0.3,2,0.3,2.9c0,1.2-0.1,2.2-0.4,3c-0.3,0.8-0.6,1.4-1.2,1.9c-0.5,0.5-1.6,1.2-3.3,2.3
+                                       c-0.3,0.2-0.5,0.3-0.7,0.5l0.5-1.9c0.3-0.1,0.6-0.3,1-0.4c0.4-0.2,0.8-0.3,1.1-0.6c-0.1-0.2-0.2-0.7-0.4-1.5
+                                       c-0.2-0.7-0.4-1.3-0.5-1.7c-0.3-0.9-0.7-1.9-1.4-3L141,12.3z M136.6,12.5l1.6,1.5c0.4,0.4,0.6,0.9,0.6,1.5v5.4l-1,1.2l0-5.7
+                                       c0-0.4-0.1-0.6-0.2-0.8c-0.1-0.2-0.3-0.4-0.6-0.6l-1.3-1L136.6,12.5z M129.4,14.6c0.5-1,1-1.8,1.4-2.3l0,0.9h1.6
+                                       c0.6,0,1.2,0.2,1.6,0.7c0.4,0.5,0.6,1.2,0.6,2.1v4.7l-1,1.5l0-5.4c0-0.8-0.1-1.4-0.3-1.7c-0.2-0.3-0.5-0.4-0.9-0.4H129.4z
+                                       M122.9,21.7l0.8-1.5h3.4c0.4-0.8,0.6-1.7,0.6-2.8c0-1.9-0.6-2.9-1.8-2.9h-2.8c0.3-0.6,0.8-1.4,1.4-2.3l0,0.9h1.7
+                                       c0.7,0,1.3,0.3,1.8,0.9c0.4,0.6,0.7,1.4,0.7,2.5c0,1.7-0.6,3.5-1.7,5.1H122.9z M121.8,15.7c0,0.7-0.5,1.8-1.4,3.3l-0.7,0.3
+                                       c0.1-0.4,0.3-0.8,0.6-1.2c0.4-0.8,0.6-1.5,0.7-1.9c0-0.2-0.1-0.5-0.2-0.7c-0.1-0.2-0.8-0.8-2-1.6l0.9-1.4c1,1,1.7,1.7,1.9,2
+                                       C121.7,14.9,121.8,15.3,121.8,15.7"/>
+                  <path class="st1" d="M173.2,16.4c0.2-0.8,0.5-1.6,0.9-2.4c0.5-0.7,1-1.1,1.7-1.1c1.6,0,2.4,1.9,2.4,5.8c0,0.7-0.1,1.3-0.3,1.7
+                                       l-0.6,1.3h-3.9l0.8-1.5h3.2c0-0.4,0.1-0.7,0.1-1c0-1.4-0.2-2.6-0.5-3.5c-0.3-0.9-0.9-1.3-1.6-1.3c-0.7,0-1.4,1.1-2.1,3.3
+                                       c-0.3,1-0.5,2.1-0.8,3.3l-1.1,1.1c0.2-0.8,0.4-1.5,0.6-2.3c0.4-1.6,0.6-2.7,0.6-3.1c0-0.9-0.3-1.8-1-2.7l0.8-1.6
+                                       c0.2,0.2,0.4,0.7,0.6,1.4C173.1,14.5,173.2,15.4,173.2,16.4 M163.9,12.5c0.2,0.5,0.4,1,0.5,1.5c0.1,0.4,0.2,0.9,0.3,1.7l0.3,2.1
+                                       c0.4-0.3,0.8-0.6,1-0.9c0.2-0.3,0.3-0.7,0.3-1.2c0-0.6-0.1-1.3-0.3-1.9l1-1.3c0.2,0.8,0.3,1.5,0.3,2.1c0,1.7-0.7,3.1-2.2,4.2
+                                       l0.2,1.1c0,0.2,0.1,0.4,0.2,0.5c0.1,0.1,0.2,0.1,0.4,0.1c0.4,0,0.9-0.2,1.4-0.6c0.5-0.4,1-0.8,1.3-1.3c0.3-0.5,0.5-1.1,0.5-1.8
+                                       c0-0.5-0.1-1.4-0.4-2.7l1.1-1.6c0.2,1.1,0.3,2,0.3,2.6c0,1.3-0.2,2.3-0.5,3.1c-0.3,0.8-0.9,1.7-1.7,2.5c-0.8,0.8-1.6,1.2-2.5,1.2
+                                       c-0.4,0-0.8-0.4-1-1.3l-0.5-2.5c-0.2-0.8-0.3-1.4-0.4-1.8c-0.1-0.4-0.2-0.7-0.3-1c-0.2-0.6-0.3-1-0.4-1.3L163.9,12.5z M156.7,14.6
+                                       c0.5-1,1-1.8,1.4-2.3l0,0.9h1.6c0.7,0,1.2,0.2,1.6,0.7c0.4,0.5,0.6,1.2,0.6,2.1v4.7l-1,1.5l0-5.4c0-0.8-0.1-1.4-0.3-1.7
+                                       c-0.2-0.3-0.5-0.4-0.9-0.4H156.7z M153.7,14.6H150c0.2-0.4,0.5-0.9,0.7-1.3l0.7-1.1l0,0.9h2.5l0.7-0.9l0,0.9h1.2l-0.5,1.5h-0.7v6.2
+                                       l-0.9,1.3L153.7,14.6z"/>
+                  <path class="st2" d="M81.1,5.8c0-1.8,0.2-2.5,0.5-2.9c0.3-0.4,1.2-0.8,2.5-0.8c3.5,0,6.6,2.9,6.6,9.8c0,8.1-3.5,10.2-6.3,10.2
+                                       c-1.4,0-2.6-0.5-3.2-0.8V5.8z M73.3,0v1.9C76.6,2.2,77,2.5,77,8.2v25c0,5.3-0.4,5.8-4,6.2v1.8h12.5v-1.8c-4.1-0.4-4.5-0.8-4.5-6.2
+                                       v-9.7l3.4,1.2c0.5,0,1.4,0,2.1-0.1c4.4-0.7,8.7-4.7,8.7-13c0-4.2-1.1-7.1-2.9-9C90.6,0.7,88,0,84.8,0H73.3z"/>
+                  <line class="st0" x1="0" y1="30.6" x2="69.1" y2="30.6"/>
+                </g>
+                <polygon class="st1" points="1,12.4 1,21.3 6,21.3 6,20.3 2.2,20.3 2.2,12.4 "/>
+                <g>
+                  <path class="st1" d="M11.9,17.6L11,15c-0.2-0.6-0.3-1.1-0.5-1.6h0c-0.1,0.5-0.3,1.1-0.4,1.6l-0.9,2.6H11.9z M8.9,18.5L8,21.3H6.8
+                                       l3-8.9h1.4l3,8.9H13l-0.9-2.8H8.9z"/>
+                  <path class="st1" d="M16.2,21.3L14,12.4h1.2l1.1,4.5c0.3,1.1,0.5,2.2,0.7,3.1h0c0.1-0.9,0.4-2,0.7-3.1l1.2-4.5h1.2l1.1,4.5
+                                       c0.3,1.1,0.5,2.1,0.6,3h0c0.2-1,0.4-2,0.7-3.1l1.2-4.5h1.2l-2.5,8.9h-1.2L20,16.6c-0.3-1.1-0.5-2-0.6-2.9h0
+                                       c-0.2,0.9-0.4,1.8-0.7,2.9l-1.3,4.6H16.2z"/>
+                  <path class="st1" d="M29.8,16.8c0,2,1,3.6,2.8,3.6c1.9,0,2.9-1.7,2.9-3.6c0-1.8-0.9-3.7-2.8-3.7C30.8,13.2,29.8,14.8,29.8,16.8
+                                       M36.7,16.8c0,3-1.9,4.6-4.1,4.6c-2.4,0-4-1.9-4-4.5c0-2.7,1.7-4.6,4.2-4.6C35.2,12.2,36.7,14.2,36.7,16.8"/>
+                </g>
+                <polygon class="st1" points="38.4,12.4 43.2,12.4 43.2,13.3 39.6,13.3 39.6,16.3 42.9,16.3 42.9,17.2 39.6,17.2 39.6,21.3 
+                                             38.4,21.3 "/>
+                <polygon class="st1" points="45.1,12.4 49.8,12.4 49.8,13.3 46.2,13.3 46.2,16.3 49.6,16.3 49.6,17.2 46.2,17.2 46.2,21.3 
+                                             45.1,21.3 "/>
+                <rect x="51.7" y="12.4" class="st1" width="1.2" height="8.9"/>
+                <g>
+                  <path class="st1" d="M61.4,21c-0.4,0.2-1.3,0.4-2.4,0.4c-2.5,0-4.4-1.6-4.4-4.5c0-2.8,1.9-4.7,4.6-4.7c1.1,0,1.8,0.2,2.1,0.4
+                                       l-0.3,0.9c-0.4-0.2-1.1-0.4-1.8-0.4c-2.1,0-3.5,1.3-3.5,3.7c0,2.2,1.3,3.6,3.4,3.6c0.7,0,1.4-0.1,1.9-0.4L61.4,21z"/>
+                </g>
+                <polygon class="st1" points="67.7,17.1 64.2,17.1 64.2,20.3 68.1,20.3 68.1,21.3 63,21.3 63,12.4 67.9,12.4 67.9,13.3 64.2,13.3 
+                                             64.2,16.1 67.7,16.1 "/>
+              </svg>
+            </div>
+
+          </a>
+          <!-- show ul on desktop-tablet with uk-visible@m = Only affects device widths of 960px and larger-->
+          <ul class="uk-navbar-nav uk-visible@m" 
+              data-uk-scrollspy-nav="closest: li; scroll: true; offset-top: -50"
+              >
+            <li><a href="#main" uk-scroll2="offset: 50;">ראשי</a></li>
+            <li><a href="#about" uk-scroll2="offset: 50;">אודות</a></li>
+            <li><a href="#services" uk-scroll2="offset: 50;">תחומי התמחות</a></li>
+            <li><a href="#contact" uk-scroll2="offset: 50;">צור קשר</a></li>
+          </ul>
+        </div>
+        <!-- social icons - hide on mobile -->
+        <div class="uk-navbar-left">
+          <div class="uk-navbar-item  uk-visible@m">
+
+            <a title="Main" uk-tooltip="title: pintok00@gmail.com; pos: bottom-center" href="mailto:pintok00@gmail.com" class="uk-icon-button uk-margin-small-left" uk-icon="mail"></a>
+
+            <a title="Phone" uk-tooltip="title: 054-622-6088; pos: bottom-center" href="tel:054-622-6088" class="uk-icon-button uk-margin-small-left" uk-icon="receiver"></a>
+
+
+
+
+            <a href="#contact" uk-scroll="offset: 80" class="uk-button uk-button-primary">קבע פגישת ייעוץ</a>
+
+          </div>
+
+        </div>
+
+        </div>
+      </nav>
+    </div>
+  <!-- OFF-CANVAS NAVBAR (Trigger by hamburger btn)
+    modes: push / slide / reveal /none 
+    -->
+  <nav id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; mode: push; flip: true">
+    <!-- offcanvas setting  -->
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+      <!-- navbar content her -->
+
+      <!-- B - offcanvas nav -->
+      <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+        <li class=""><a href="#main" uk-scroll2>ראשי</a></li>
+        <li class=""><a href="#about" uk-scroll2>אודות</a></li>
+        <li class=""><a href="#services" uk-scroll2>תחומי התמחות</a></li>
+        <li class=""><a href="#contact" uk-scroll2>צור קשר</a></li>
+
+        <li class="">
+          <a href="#contact">
+            <button  uk-scroll2="" class="uk-margin-top uk-button uk-button-danger uk-text-center">קבע פגישת ייעוץ</button>
+          </a>
+        </li>
+      </ul>
+
+
+      <!--C- contact us -->
+      <footer class="uk-margin-medium-top">
+        <hr>
+        <span uk-icon="icon: phone"></span>
+        <a class="uk-link-text" href="tel:054-622-6088">⁦054-622-6088⁩</a>
+      </footer>
+    </div>
+  </nav>
+
+
+
+
+  <header id="main">
+    <div class="uk-section-secondary">
+      <!-- change her the bg image + The overlay color/opacity/direction (under style="") -->
+      <!-- Use "data-uk-height-viewport" for full 100VH hero (entire viewport) -->
+      <div id="change-her-the-bg-image" class="uk-background-center-bottom uk-section uk-section-xlarge uk-flex uk-flex-middle"   style="background: linear-gradient(to left, rgba(30, 75, 115, 0.9), rgba(0, 0, 0, 0.5)), url('https://i.ibb.co/t8CdmKT/shoval-pintok.jpg'); background-repeat: no-repeat; background-size: cover; background-position: 50% 70%">
+        <div class="uk-width-1-1">
+          <!-- hero container -->
+          <div class="uk-container uk-container-large">
+            <!-- Heading: Add margin top for h1 - like this the text looks more center v beacuse the navbar is transpernt -->
+            <h1 class="uk-margin-small uk-margin-medium-top uk-width-large@m uk-text-center uk-h6 uk-heading-line uk-align-center">
+              <!-- extra span for uk-heading-line -->
+              <span>משרד עורכי דין</span>
+            </h1>
+            <h2 class="uk-margin-small uk-heading-large uk-text-center" 
+                >
+              שובל פינטוק 
+            </h2>
+            <p class="uk-text-center">
+              דיני עבודה, 
+              תובענות ייצוגיות,  
+              חדלות פירעון והוצאה לפועל, 
+              מכרזים, 
+              חוזים      
+
+            </p>
+            <!-- Arrow: With link to #main section + uk-scroll="" for smooth scrolling + offset (Beacuse the nav is sticky)-->
+            <div class="uk-margin uk-text-center@m uk-text-center" data-uk-parallax="y: 0,450;opacity: 1,0;easing: 0.3;target: !.uk-section;media: @s">
+              <a uk-icon="icon: arrow-down;ratio: 1.5" class="uk-icon-link uk-icon" href="#about" data-uk-scroll="offset: 80"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ########## ABOUT ########## -->
+  <section id="about" class="uk-section uk-section-large">
+    <div class="uk-container uk-container-small">
+
+      <h2 class="uk-heading-line uk-text-right"><span>אודות המשרד</span></h2>
+
+      <p>
+        <b>שובל פינטוק
+        </b>
+        בוגרת הטכניון, הנדסאית מכונות מוסמכת; 
+        בעלת תואר ראשון במשפטים ( LLB) ובתקשורת (BA) בהצטיינות. 
+        חברת לשכת עורכי הדין  ומוסמכת מטעם משרד המשפטים לעריכת ייפוי כח מתמשך.</p>
+      <p>
+        המשרד מעניק ללקוחותיו שירותים משפטיים בתחומי ההתמחות: דיני עבודה, תובענות ייצוגיות, חדלות פירעון והוצאה לפועל, דיני חוזים ומכרזים, ייפוי כח מתמשך.
+      </p>
+      <p>
+        המשרד דוגל במתן שירות אפקטיבי, זמין תוך שימת דגש על יחס אישי ובשקיפות מלאה בפני הלקוחות. 
+      </p>
+    </div>
+  </section>
+
+
+
+
+  <!-- ########## SERVICES ########## -->
+  <section id="services" class="uk-section uk-section-muted  uk-section-large">
+    <div class="uk-container">
+
+      <h2 class="uk-heading-line uk-text-right"><span>תחומי התמחות</span></h2>
+
+
+      <div class="uk-child-width-1-2@s uk-grid-match" uk-grid
+           uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .uk-card; delay: 50; repeat: false"
+           >
+        <!-- card 1 -->
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <span class="uk-text-success" uk-icon="icon: check"></span>
+
+            <h3 class="uk-card-title">דיני עבודה</h3>
+            <p>מתן ייעוץ משפטי שוטף בהפרות זכויות עובדים, ליווי עובדים בחתימה על הסכמי עבודה ועוד.</p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <span class="uk-text-success" uk-icon="icon: check"></span>
+
+            <h3 class="uk-card-title">תובענות ייצוגיות</h3>
+            <p>כלי רב עוצמה המאפשר לצרכן בודד לתבוע בשם ציבור מסוים של נפגעים ולאכוף את זכויות הזולת. המשרד מייצג תובעים במגוון נושאים.</p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <span class="uk-text-success" uk-icon="icon: check"></span>
+
+            <h3 class="uk-card-title">ייפוי כח מתמשך</h3>
+            <p>עריכת ייפוי כח מתמשך שהינו מנגנון ייחודי המאפשר לכל אדם בגיר, לקבוע מי יטפל בענייניו בעתיד אם וכאשר לא יהיה מסוגל לטפל בענייניו בעצמו.</p>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <span class="uk-text-success" uk-icon="icon: check"></span>
+
+            <h3 class="uk-card-title">חדלות פירעון והוצאה לפועל</h3>
+            <p>ייצוג זוכים וחייבים; סגירת חובות ושיקום כלכלי.</p>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <span class="uk-text-success" uk-icon="icon: check"></span>
+
+            <h3 class="uk-card-title">מכרזים</h3>
+            <p>ליווי וסיוע בכל שלבי המכרז.</p>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">
+            <span class="uk-text-success" uk-icon="icon: check"></span>
+
+            <h3 class="uk-card-title">חוזים</h3>
+            <p>עריכת חוזים בתחום האזרחי והמסחרי. כמו כן המשרד מטפל בתחומים של אכיפה והפרת חוזה.</p>
+          </div>
+        </div>
+
+      </div><!-- end grid -->
+    </div>
+  </section>
+
+  <!-- contact us -->
+  <footer class="uk-section uk-section-secondary  uk-section-large" id="contact">
+    <div class="uk-container uk-container-small">
+      <div class="uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid>
+        <div><!-- col 1-->
+          <h2 class="uk-heading-line uk-text-right"><span>צור קשר</span></h2>
+
+          <p class="uk-text-large">
+            <b>
+              <span uk-icon="icon: receiver"></span>
+
+              התקשרו: 
+            </b>
+            <a href="tel:054-622-6088">⁦054-622-6088⁩</a>
+          </p>
+          <p>
+            <b>
+              <span uk-icon="icon: mail"></span>
+
+              אימייל: 
+            </b> 
+            <a style="text-decoration: underline;" href="mailto:pintok00@gmail.com">pintok00@gmail.com</a>
+          </p>
+          <p>
+            <b>
+              <span uk-icon="icon: location"></span>
+
+              כתובת: 
+            </b> 
+            רחוב ורדיה 8, חיפה
+          </p>
+          <p>
+            <b>
+              <span uk-icon="icon: clock"></span>
+
+              שעות פעילות: 
+            </b>
+            א'-ה' 9:00-18:00
+          </p>
+        </div><!-- end col 1 -->
+        <!-- col 2 -->
+        <div>
+          <form class="uk-form-stacked" name="contact" method="POST" data-netlify="true">
+            <h2 class="uk-heading-line uk-text-right"><span>טופס התקשרות</span></h2>
+            <p>
+              השאר פרטים ונחזור אליך בהקדם:
+            </p>
+            <fieldset class="uk-fieldset">
+              <div class="uk-margin">
+                <label class="uk-form-label">שם מלא: </label>   
+                <input required class="uk-input" type="text" name="name" placeholder="שם מלא"/>
+              </div>
+              <div class="uk-margin">
+                <label class="uk-form-label">טלפון: </label>
+                <input required class="uk-input" type="phone" name="phone" placeholder="טלפון"/>
+              </div>
+              <div class="uk-margin">
+                <label class="uk-form-label">דוא"ל: </label>
+                <input required class="uk-input" type="email" name="email" placeholder='דוא"ל'/>
+              </div>
+              <div class="uk-margin">
+                <label class="uk-form-label">הודעה: 
+                  <textarea class="uk-textarea" name="message"></textarea></label>
+              </div>
+              <div>
+                <button style="background: #1e87f0;" class="uk-width-1-1 uk-button uk-button-danger uk-button-large" type="submit">שליחה</button>
+              </div>
+            </fieldset>
+          </form>
+        </div><!-- end col 2 -->
+      </div><!-- end grid -->
+    </div><!-- end container -->
+  </footer>
+
+
+  <div class="uk-section uk-section-xsmall uk-section-secondary uk-text-center">
+    <small>
+      זכויות יוצרים © 2022 כל הזכויות שמורות
+    </small>
+  </div>
+
+
+
+
+  <!-- CUSTOM CODE -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+    const class_name_2 = "#logo";
+    let exists_2 = $( class_name_2 ).length ? true : false;
+    $(window).on("scroll", function() {
+      if(exists_2 && $(window).scrollTop() > 0) {
+        $(class_name_2).css('filter', 'invert(100%)');  
+      } else if(exists_2) {
+        /* remove active class */
+        $(class_name_2).css('filter', 'invert(0%)');  
+      }
+    });
+  </script>
+
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js"></script>
+
+
+  </body>
+</html>
