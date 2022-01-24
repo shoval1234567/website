@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="he">
   <head>
+     <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link rel="icon" href="/shoval-logo-favicon.svg" type="image/svg+xml" sizes="any">
@@ -18,38 +23,20 @@
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/css/uikit.min.css" />
 
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-      
-      
+    <style>  
       .uk-navbar-item{
         padding: 0 25px;
       }
       body *{
-        font-family: 'Open Sans', sans-serif!important;
-        
+        font-family: 'Open Sans', sans-serif!important;   
       }
+      
       h1, h2, h3, h4, h5, h6, .uk-card, span{
         overflow-x: initial;
       }
       body, section, .uk-container{
         overflow-x: hidden;
       }
-
-      #whatsapp_english{
-        position: fixed;
-        left: auto;
-        top: auto;
-        right: 10px;
-        bottom: 10px;
-        z-index: 2000;
-        width: 70px;
-      }
-
 
       #logo{
         transition: 0.2s;
@@ -65,22 +52,13 @@
           box-sizing: border-box;
         }
       }
+      
       body{
         direction: rtl;
       }
     </style>
-    <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
   </head>
   <body>
-
-
-
-    <!-- codepen editor mode - you could open the HTML tab in full width + only one extra line of CSS (not from uikit core) on this example 
-    **since rc.20(October 24, 2018)Offcanvas no longer requires a wrapping content div
-    -->
-
     <!-- Sticky navbar -->
     <div class="uk-position-top" id="top">
       <nav class="uk-navbar-container uk-navbar-transparent uk-light" data-uk-navbar="dropbar: false;"
@@ -89,8 +67,6 @@
                            cls-active: uk-navbar-sticky; 
                            cls-inactive: uk-navbar-transparent uk-light; top: 0">
         <!-- right -->
-
-
         <div class="uk-navbar-right">
           <!--off-canvas trigger hamburger btn. show only on mobile -->
           <a class="uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #offcanvas-nav-primary">
@@ -162,7 +138,6 @@
                                              64.2,16.1 67.7,16.1 "/>
               </svg>
             </div>
-
           </a>
           <!-- show ul on desktop-tablet with uk-visible@m = Only affects device widths of 960px and larger-->
           <ul class="uk-navbar-nav uk-visible@m" 
@@ -177,18 +152,10 @@
         <!-- social icons - hide on mobile -->
         <div class="uk-navbar-left">
           <div class="uk-navbar-item  uk-visible@m">
-
             <a title="Main" uk-tooltip="title: pintok00@gmail.com; pos: bottom-center" href="mailto:pintok00@gmail.com" class="uk-icon-button uk-margin-small-left" uk-icon="mail"></a>
-
             <a title="Phone" uk-tooltip="title: 054-622-6088; pos: bottom-center" href="tel:054-622-6088" class="uk-icon-button uk-margin-small-left" uk-icon="receiver"></a>
-
-
-
-
             <a href="#contact" uk-scroll="offset: 80" class="uk-button uk-button-primary">קבע פגישת ייעוץ</a>
-
           </div>
-
         </div>
       </nav>
     </div>
