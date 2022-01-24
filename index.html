@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="he">
   <head>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/css/uikit.min.css" />
+    
      <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,8 +23,7 @@
 <meta property="og:image"              content="/shoval-pintok-og.png" />
     
     
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/css/uikit.min.css" />
+
 
     <style>  
       .uk-navbar-item{
@@ -262,8 +264,7 @@
 
 
       <div class="uk-child-width-1-2@s uk-grid-match" data-uk-grid
-           uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .uk-card; delay: 50; repeat: false"
-           style="overflow-x:hidden;"
+           uk-scrollspy2="cls: uk-animation-slide-bottom-small; target: .uk-card; delay: 50; repeat: false"
            >
         <!-- card 1 -->
         <div>
@@ -405,7 +406,9 @@
     </small>
   </div>
 
-
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js"></script>
 
 
   <!-- CUSTOM CODE -->
@@ -415,7 +418,7 @@
     const class_name_2 = "#logo";
     let exists_2 = $( class_name_2 ).length ? true : false;
     $(window).on("scroll", function() {
-      if(exists_2 && $(window).scrollTop() > 0) {
+      if(exists_2 && $(window).scrollTop() > 3) {
         $(class_name_2).css('filter', 'invert(100%)');  
       } else if(exists_2) {
         /* remove active class */
@@ -425,9 +428,6 @@
   </script>
 
 
-  <!-- UIkit JS -->
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js"></script>
 
 
   </body>
