@@ -41,6 +41,17 @@
 
 
     <style>  
+      .uk-navbar-right .uk-navbar-nav>li>a {
+        color: black;   
+        
+      }
+      
+      .uk-navbar-right .uk-navbar-nav>li>a.uk-active {
+        color: ##1e87f0;   
+        
+      }
+      
+
       .uk-navbar-item{
         padding: 0 25px;
       }
@@ -181,7 +192,11 @@
             </div>
             </h1>
             <div class="uk-margin uk-text-center@m uk-text-center">
-              <a uk-icon="icon: arrow-down;ratio: 1.5" class="uk-icon-link uk-icon" href="#about" data-uk-scroll="offset: 80"></a>
+              <a uk-icon="icon: arrow-down;ratio: 1.5" class="uk-icon-link uk-icon" href="#about" data-uk-scroll="offset: 50">
+                  <span style="opacity:0; display: none;">
+                    אודות החברה
+                </span>
+              </a>
             </div>
           </div>
         </div>
