@@ -27,7 +27,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link rel="icon" href="/shoval-logo-favicon.svg" type="image/svg+xml" sizes="any">
-    <title>הצהרת נגישות | שובל פינטוק - משרד עורכי דין</title>
+    <title>שובל פינטוק - משרד עורכי דין</title>
     <meta name="description" content="דיני עבודה, תובענות ייצוגיות, חדלות פירעון והוצאה לפועל, מכרזים, חוזים">
     <meta name="author" content="שובל פינטוק עורכת דין">
 
@@ -71,7 +71,7 @@
   </head>
   <body>
     <!-- Sticky navbar -->
-    <div class="uk-position-top" id="top">
+    <div  id="top" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
       <nav class="uk-navbar-container" data-uk-navbar="dropbar: false;">
         <!-- right -->
         <div class="uk-navbar-right">
@@ -104,41 +104,47 @@
           </div>
         </div>
       </nav>
-    </div>
-    <!-- OFF-CANVAS NAVBAR (Trigger by hamburger btn)
+
+
+
+      <!-- OFF-CANVAS NAVBAR (Trigger by hamburger btn)
     modes: push / slide / reveal /none 
     -->
-    <nav id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; mode: push; flip: false">
-      <!-- offcanvas setting  -->
-      <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-        <!-- navbar content her -->
+      <nav id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; mode: push; flip: false">
+        <!-- offcanvas setting  -->
+        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+          <!-- navbar content her -->
 
-        <!-- B - offcanvas nav -->
-        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-          <li class=""><a href="/#main" uk-scroll2>ראשי</a></li>
-          <li class=""><a href="/#about" uk-scroll2>אודות</a></li>
-          <li class=""><a href="/#services" uk-scroll2>תחומי התמחות</a></li>
-          <li class=""><a href="/#contact" uk-scroll2>צור קשר</a></li>
-          <li class=""><a href="/accessibility_statement" uk-scroll2>הצהרת נגישות</a></li>
-          <li class="">
-            <a href="#contact">
-              <button  uk-scroll2="" class="uk-margin-top uk-button uk-button-danger uk-text-center">קבע פגישת ייעוץ</button>
-            </a>
-          </li>
-        </ul>
-
-
-        <!--C- contact us -->
-        <footer class="uk-margin-medium-top">
-          <hr>
-          <span uk-icon="icon: phone"></span>
-          <a class="uk-link-text" href="tel:054-622-6088">054-622-6088</a>
-        </footer>
-      </div>
-    </nav>
+          <!-- B - offcanvas nav -->
+          <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+            <li class=""><a href="/#main" uk-scroll2>ראשי</a></li>
+            <li class=""><a href="/#about" uk-scroll2>אודות</a></li>
+            <li class=""><a href="/#services" uk-scroll2>תחומי התמחות</a></li>
+            <li class=""><a href="/#contact" uk-scroll2>צור קשר</a></li>
+            <li class=""><a href="/accessibility_statement" uk-scroll2>הצהרת נגישות</a></li>
+            <li class="">
+              <a href="#contact">
+                <button  uk-scroll2="" class="uk-margin-top uk-button uk-button-danger uk-text-center">קבע פגישת ייעוץ</button>
+              </a>
+            </li>
+          </ul>
 
 
-<br><br><br><br>
+          <!--C- contact us -->
+          <footer class="uk-margin-medium-top">
+            <hr>
+            <span uk-icon="icon: phone"></span>
+            <a class="uk-link-text" href="tel:054-622-6088">054-622-6088</a>
+          </footer>
+        </div>
+      </nav>
+
+    </div>
+
+
+    <!-- end mobile and desktop navbar -->
+
+    <br><br><br><br>
 
     <header id="main">
       <div class="uk-section">
@@ -146,7 +152,7 @@
           <p><a href="/">
             חזרה למסך הראשי
             </a>
-            <h1>
+          <h1>
             הצהרת נגישות
           </h1>
 
@@ -157,10 +163,10 @@
           <h2>
             להלן חלק מהפעולות שבוצעו במסגרת הנגשת אתר האינטרנט של החברה:
           </h2>
-          
+
           <ul>
             <li>
-                          אמצעי הניווט וההתמצאות באתר פשוטים ונוחים לשימוש.
+              אמצעי הניווט וההתמצאות באתר פשוטים ונוחים לשימוש.
 
             </li>
             <li>
@@ -176,113 +182,113 @@
             התאמת האתר לסביבות עבודה ברזולוציות שונות.
 
           </li>
-            <li>
-              לאובייקטים הגראפיים יש חלופה טקסטואלית (alt).
+          <li>
+            לאובייקטים הגראפיים יש חלופה טקסטואלית (alt).
           </li>
-            <li>
-              הקישורים באתר ברורים ומכילים הסבר לאן הם מקשרים.
+          <li>
+            הקישורים באתר ברורים ומכילים הסבר לאן הם מקשרים.
           </li>
-            
-            
+
+
           </ul>
-        </div>
+      </div>
 
 
       </div>
     </header>
 
 
-    <!-- ########## ABOUT ########## -->
-    <section id="about" class="uk-section uk-section-large">
+  <!-- ########## ABOUT ########## -->
+  <section id="about" class="uk-section uk-section-large">
+    <div class="uk-container uk-container-small">
+
+      </section>
+
+    <!-- contact us -->
+    <footer class="uk-section uk-section-secondary  uk-section-large" id="contact">
       <div class="uk-container uk-container-small">
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid>
+          <div><!-- col 1-->
+            <h2 class="uk-heading-line uk-text-right"><span>צור קשר</span></h2>
 
-        </section>
+            <p class="uk-text-large">
+              <b>
+                <span uk-icon="icon: receiver"></span>
 
-      <!-- contact us -->
-      <footer class="uk-section uk-section-secondary  uk-section-large" id="contact">
-        <div class="uk-container uk-container-small">
-          <div class="uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid>
-            <div><!-- col 1-->
-              <h2 class="uk-heading-line uk-text-right"><span>צור קשר</span></h2>
+                התקשרו: 
+              </b>
+              <a href="tel:054-622-6088">054-622-6088</a>
+            </p>
+            <p>
+              <b>
+                <span uk-icon="icon: mail"></span>
 
-              <p class="uk-text-large">
-                <b>
-                  <span uk-icon="icon: receiver"></span>
+                אימייל: 
+              </b> 
+              <a style="text-decoration: underline;" href="mailto:pintok00@gmail.com">pintok00@gmail.com</a>
+            </p>
+            <p>
+              <b>
+                <span uk-icon="icon: location"></span>
 
-                  התקשרו: 
-                </b>
-                <a href="tel:054-622-6088">054-622-6088</a>
-              </p>
-              <p>
-                <b>
-                  <span uk-icon="icon: mail"></span>
+                כתובת: 
+              </b> 
+              רחוב ורדיה 8, חיפה
+            </p>
+            <p>
+              <b>
+                <span uk-icon="icon: clock"></span>
 
-                  אימייל: 
-                </b> 
-                <a style="text-decoration: underline;" href="mailto:pintok00@gmail.com">pintok00@gmail.com</a>
-              </p>
-              <p>
-                <b>
-                  <span uk-icon="icon: location"></span>
-
-                  כתובת: 
-                </b> 
-                רחוב ורדיה 8, חיפה
-              </p>
-              <p>
-                <b>
-                  <span uk-icon="icon: clock"></span>
-
-                  שעות פעילות: 
-                </b>
-                א'-ה' 9:00-18:00
-              </p>
-              </br>
-          </div><!-- end col 1 -->
-          <!-- col 2 -->
-          <div>
-            <form class="uk-form-stacked" name="contact" method="POST" data-netlify="true">
-              <h2 style="margin-top: 0px;" class="uk-heading-line uk-text-right"><span>טופס התקשרות</span></h2>
-              <p>
-                השאר פרטים ונחזור אליך בהקדם:
-              </p>
-              <fieldset class="uk-fieldset">
-                <div class="uk-margin">
-                  <label for="name" class="uk-form-label">שם מלא: </label>   
-                  <input required class="uk-input" type="text" id="name" name="name" placeholder="שם מלא"/>
-                </div>
-                <div class="uk-margin">
-                  <label for="phone" class="uk-form-label">טלפון: </label>
-                  <input required class="uk-input" id="phone" type="tel" name="phone" placeholder="טלפון"/>
-                </div>
-                <div class="uk-margin">
-                  <label for="email" class="uk-form-label">דוא"ל: </label>
-                  <input id="email" required class="uk-input" type="email" name="email" placeholder='דוא"ל'/>
-                </div>
-                <div class="uk-margin">
-                  <label for="message" class="uk-form-label">הודעה: 
-                    <textarea id="message" class="uk-textarea" name="message"></textarea></label>
-                </div>
-                <div>
-                  <button style="background: #1e87f0;" class="uk-width-1-1 uk-button uk-button-danger uk-button-large" type="submit">שליחה</button>
-                </div>
-              </fieldset>
-            </form>
-          </div><!-- end col 2 -->
-        </div><!-- end grid -->
-        </div><!-- end container -->
-      </footer>
+                שעות פעילות: 
+              </b>
+              א'-ה' 9:00-18:00
+            </p>
+            </br>
+        </div><!-- end col 1 -->
+        <!-- col 2 -->
+        <div>
+          <form class="uk-form-stacked" name="contact" method="POST" data-netlify="true">
+            <h2 style="margin-top: 0px;" class="uk-heading-line uk-text-right"><span>טופס התקשרות</span></h2>
+            <p>
+              השאר פרטים ונחזור אליך בהקדם:
+            </p>
+            <fieldset class="uk-fieldset">
+              <div class="uk-margin">
+                <label for="name" class="uk-form-label">שם מלא: </label>   
+                <input required class="uk-input" type="text" id="name" name="name" placeholder="שם מלא"/>
+              </div>
+              <div class="uk-margin">
+                <label for="phone" class="uk-form-label">טלפון: </label>
+                <input required class="uk-input" id="phone" type="tel" name="phone" placeholder="טלפון"/>
+              </div>
+              <div class="uk-margin">
+                <label for="email" class="uk-form-label">דוא"ל: </label>
+                <input id="email" required class="uk-input" type="email" name="email" placeholder='דוא"ל'/>
+              </div>
+              <div class="uk-margin">
+                <label for="message" class="uk-form-label">הודעה: 
+                  <textarea id="message" class="uk-textarea" name="message"></textarea></label>
+              </div>
+              <div>
+                <button style="background: #1e87f0;" class="uk-width-1-1 uk-button uk-button-danger uk-button-large" type="submit">שליחה</button>
+              </div>
+            </fieldset>
+          </form>
+        </div><!-- end col 2 -->
+      </div><!-- end grid -->
+      </div><!-- end container -->
+    </footer>
 
 
-    <div class="uk-section uk-section-xsmall uk-section-secondary uk-text-center">
-      <small>
-        זכויות יוצרים © 2022 כל הזכויות שמורות
-      </small>
-    </div>
+  <div class="uk-section uk-section-xsmall uk-section-secondary uk-text-center">
+    <small>
+      זכויות יוצרים © 2022 כל הזכויות שמורות
+    </small>
+  </div>
 
-    <!-- UIkit JS -->
-    <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js"></script>
+  <!-- UIkit JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/uikit@3.10.1/dist/js/uikit-icons.min.js"></script>
 
 
   </body>
